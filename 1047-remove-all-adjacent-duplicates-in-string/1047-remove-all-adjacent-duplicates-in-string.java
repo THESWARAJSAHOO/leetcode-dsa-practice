@@ -1,9 +1,8 @@
 class Solution {
     public String removeDuplicates(String s) {
         Stack <Character> st = new Stack<>();
-        int i;
         StringBuilder res = new StringBuilder();
-        for(i=0;i<s.length();i++){
+        for(int i=0;i<s.length();i++){
             char c = s.charAt(i);
             if(st.isEmpty()){
                 st.push(c);
